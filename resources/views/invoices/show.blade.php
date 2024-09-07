@@ -27,7 +27,7 @@
                                     <option value="online">Online</option>
                                     <option value="cash">Cash</option>
                                 </select>
-                            </div>
+                            </div></br>
                             <button type="submit" class="btn btn-primary">Pay</button>
                         </form>
                     </div>
