@@ -28,13 +28,7 @@
                                     <td>${{ number_format($invoice->remaining_balance, 2) }}</td>
                                     <td>{{ $invoice->status }}</td>
                                     <td>{{ $invoice->due_date->format('Y-m-d') }}</td>
-                                    <td>
-                                        <form action="{{ route('invoices.pay', $invoice) }}" method="POST" class="d-inline">
-                                            @csrf
-                                            <input type="number" name="amount" step="0.01" min="0" required class="form-control form-control-sm d-inline w-auto">
-                                            <button type="submit" class="btn btn-success btn-sm">Pay</button>
-                                        </form>
-                                    </td>
+                                    <td> <a href="{{ route('invoices.show', $invoice->id)}}" class="btn btn-success btn-sm">View</a></td>
                                 </tr>
                             @endforeach
                         </tbody>
