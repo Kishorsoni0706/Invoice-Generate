@@ -18,4 +18,10 @@ step-4: php artisan migrate
 step-5: php artisan serve
 
 
+##  Steps for Invoice Generate:
+Step 1: php artisan queue:work 
+Step 2:  php artisan invoices:generate
+
+
+
 
